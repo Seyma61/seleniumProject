@@ -37,8 +37,18 @@ public class T2_LinkText_Practice {
         }
 
         //5-Go back to home page by using the .back();
+        driver.navigate().back();
+
         //6- verify title equals:
         //Expected: Practice
+        String expectedTitle2="Practice";
+        actualTitle = driver.getTitle();
+
+        if (actualTitle.equals(expectedTitle2)){
+            System.out.println("Title verification PASSED!");
+        }else {
+            System.out.println("Title verification FAİLED!!!");
+        }
 
 
     }
